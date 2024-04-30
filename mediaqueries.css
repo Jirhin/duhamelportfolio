@@ -41,6 +41,11 @@
     .about-containers {
         margin-top: 0;
     }
+
+    #projects .experience-details-container {
+        grid-template-columns: 1fr; 
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -96,5 +101,8 @@
     }
     .text-container {
         text-align: justify;
+    }
+    #projects .experience-details-container {
+        grid-template-columns: 1fr; 
     }
 }
