@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Théo Duhamel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+    <div class="logo">Théo Duhamel</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Mes expériences</a></li>
+            <li><a href="#projects">Mes projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Théo Duhamel</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Expériences</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Theo pp"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Portfolio de</p>
+            <h1 class="title">Théo Duhamel</h1>
+            <p class="section__text__p2">Etudiant en BTS SIO option SISR</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')"> 
+                Télécharger mon CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'"> 
+                Me contacter
+                </button>
+            </div> 
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Mon profil Linkedin"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/th%C3%A9o-duhamel-854b33180/'"/>
+                <img src="./assets/github.png" alt="Mon profil Github"
+                class="icon" onclick="location.href='https://github.com/Jirhin'"/>
+            </div> 
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Apprendre à me connaître</p>
+        <h1 class="title">À propos de moi</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+                        <h3>Experiences</h3>
+                        <p>Stages <br>Technicien Informatique</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon"/>
+                        <h3>Etudes</h3>
+                        <p>BAC+2 <br>BTS SIO option SISR</p>
+                    </div>
+                </div>
+                    <div class="text-container">
+                        <p>Étant à la recherche d'une alternance pour mon bachelor
+                            à partir de septembre, D'un rythme deux semaines
+                            entreprise et une semaine en école. Je suis motivé pour
+                            mettre mes connaissances en pratique et contribuer à des
+                            projets concrets. Je suis ouvert à différentes opportunités
+                            et je suis prêt à m'investir pleinement dans mon rôle au
+                            sein de l'entreprise
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" onclick="location.href='./#experience'" class="icon arrow"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1"> Mes</p>
+        <h1 class="title">Compétences</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programmation</h2>
+                    <div class="article-container">
+                        <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Compétent</p>
+                        </div>
+                        </article>
+                        <article>
+                         <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                            <div>
+                            <h3>CSS</h3>
+                            <p>Compétent</p>
+                         </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                            <div>
+                            <h3>JavaScript</h3>
+                            <p>Avancé</p>
+                        </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Avancé</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Débutant avancé</p>
+                            </div>
+                        </article>
+                        <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>C++</h3>
+                            <p>Débutant</p>
+                        </div>
+                    </article>
+                </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technicien Informatique</h2>
+                    <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>AD</h3>
+                            <p>Compétent</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Cybérsécurité</h3>
+                            <p>Avancé</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Powershell</h3>
+                            <p>Intermédiaire</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Dépannage</h3>
+                            <p>Compétent</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Virtualisation</h3>
+                            <p>Avancé</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Cloud</h3>
+                            <p>Avancé</p>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Mes projets récents</p>
+        <h1 class="title">Projets</h1>
+        <div class="experience-details-container" id="projectscont">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Projects 1" class="projects-img"> 
+                    </div>
+                    <h2 class="experience-sub-title project-title">Projet TiersLieux86 </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 projects-btn" onclick="location.href='./tierslieux.html#documentation'"> 
+                            Documents
+                        </button>
+                        <button class="btn btn-color-1 projects-btn" onclick="location.href='./tierslieux.html'"> 
+                            Informations
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Projects 1" class="projects-img"> 
+                    </div>
+                    <h2 class="experience-sub-title project-title">Projet en cours </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 projects-btn" onclick="location.href='A CHANGER'"> 
+                            Github
+                        </button>
+                        <button class="btn btn-color-1 projects-btn" onclick="location.href='A CHANGER'"> 
+                            Informations
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" onclick="location.href='./#contact'" class="icon arrow"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Une demande ou besoin d'informations?</p>
+        <h1 class="title">Me contacter ici!</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
+                <p><a href="mailto:theo.duhamel08@gmail.com">theo.duhamel08@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/th%C3%A9o-duhamel-854b33180/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#experience">Mes expériences</a></li>
+                    <li><a href="#projects">Mes projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Théo Duhamel. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Théo Duhamel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+    <div class="logo">Théo Duhamel</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="./index.html" onclick="toggleMenu()">Accueil</a></li>
+            <li><a href="#documentation" onclick="toggleMenu()">Documentation</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+    </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Théo Duhamel</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./index.html" onclick="toggleMenu()">Accueil</a></li>
+                <li><a href="#documentation" onclick="toggleMenu()">Documentation</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/project-1.png" alt="Projects 1" class="project-1"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Présentation du projet </p>
+            <h1 class="title">TiersLieux86</h1>
+            <p class="section__text__p2">Effectué pendant le BTS SIO option SISR</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/documentsmerged.pdf')"> 
+                Télécharger toute la documentation
+                </button>
+            </div> 
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Mon profil Linkedin"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/th%C3%A9o-duhamel-854b33180/'"/>
+                <img src="./assets/github.png" alt="Mon profil Github"
+                class="icon" onclick="location.href='https://github.com/Jirhin'"/>
+            </div> 
+        </div>
+    </section>
+    <section id="documentation">
+        <h1>Visualisateur des différents PDF liés au projet</h1>
+        <section id="pdf" class="pdf">
+            <p>Visualisateur de PDF avec le dossier documentaire</p>
+            <embed src="./assets/docu.pdf" width="800" height="500" type="application/pdf"/>
+        </section>
+        <section id="pdf" class="pdf">
+            <p>Visualisateur de PDF avec le bilan du projet</p>
+            <embed src="./assets/PROJETBILAN.pdf" width="800" height="500" type="application/pdf"/>
+        </section>
+        <section id="pdf" class="pdf">
+            <p>Visualisateur de PDF avec la documentation technique</p>
+            <embed src="./assets/DocuTech.pdf" width="800" height="500" type="application/pdf"/>
+        </section>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Une demande ou besoin d'informations?</p>
+        <h1 class="title">Me contacter ici!</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
+                <p><a href="mailto:theo.duhamel08@gmail.com">theo.duhamel08@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/th%C3%A9o-duhamel-854b33180/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#experience">Mes expériences</a></li>
+                    <li><a href="#projects">Mes projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Théo Duhamel. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
